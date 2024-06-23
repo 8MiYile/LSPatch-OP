@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notification -->
+    <string name="module_is_not_activated_yet">El mòdul Xposed encara no està activat</string>
+    <string name="module_is_not_activated_yet_main_user_detailed">%1$s s\'ha instal·lat, però encara no està activat</string>
+    <string name="module_is_not_activated_yet_multi_user_detailed">%1$s s\'ha instal·lat a l\'usuari %2$s, però encara no està activat</string>
+    <string name="xposed_module_updated_notification_title">Mòdul Xposed actualitzat</string>
+    <string name="xposed_module_updated_notification_content">%s s\'ha actualitzat, si us plau, força l\'aturada i reinici de les aplicacions del seu abast</string>
+    <string name="xposed_module_updated_notification_title_system">Mòdul Xposed actualitzat, cal reiniciar el sistema</string>
+    <string name="xposed_module_updated_notification_content_system">%s s\'ha actualitzat, ja que l\'abast conté System Framework, cal reiniciar per aplicar els canvis</string>
+    <string name="module_updated_channel_name">S\'ha completat l\'actualització del mòdul</string>
+    <string name="status_channel_name">Estat LSPosed</string>
+    <string name="lsposed_running_notification_title">LSPosed carregat</string>
+    <string name="lsposed_running_notification_content">Toqueu la notificació per obrir el gestor</string>
+    <string name="xposed_module_request_scope_title">Sol·licitud d\'abast</string>
+    <string name="xposed_module_request_scope_content">%1$s a l\'usuari %2$s demana afegir %3$s al seu abast.</string>
+    <string name="scope_channel_name">Sol·licitud d\'abast</string>
+    <string name="scope_approve">Aprovar</string>
+    <string name="scope_deny">Negar</string>
+    <string name="nerver_ask_again">Mai pregunteu</string>
+</resources>

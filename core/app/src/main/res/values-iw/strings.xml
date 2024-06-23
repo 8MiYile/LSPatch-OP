@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of LSPosed.
+  ~
+  ~ LSPosed is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ LSPosed is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with LSPosed.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2021 LSPosed Contributors
+  -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/xposed_module_updated_notification_*,@string/module_is_not_activated_*">
+    <!-- MainActivity -->
+    <string name="overview">סקירה כללית</string>
+    <string name="Modules">מודולים</string>
+    <plurals name="modules_enabled_count">
+        <item quantity="one">%d מודול מופעל</item>
+        <item quantity="two">%d מודולים מופעלים</item>
+        <item quantity="many">%d מודולים מופעלים</item>
+        <item quantity="other">%d מודולים מופעלים</item>
+    </plurals>
+    <string name="Logs">לוגים</string>
+    <string name="Settings">הגדרות</string>
+    <string name="feedback_or_suggestion">משוב או הצעה</string>
+    <string name="About">אודות</string>
+    <string name="report_issue">דווח על בעיה</string>
+    <string name="module_repo">מאגר מידע</string>
+    <string name="module_repo_up_to_date">כל המודולים מעודכנים</string>
+    <string name="module_repo_published_time">פורסם ב-%s</string>
+    <string name="module_repo_updated_time">עודכן ב-%s</string>
+    <plurals name="module_repo_upgradable">
+        <item quantity="one">%d מודולים ניתנים לשדרוג</item>
+        <item quantity="two">%d מודולים ניתנים לשדרוג</item>
+        <item quantity="many">%d מודולים ניתנים לשדרוג</item>
+        <item quantity="other">%d מודולים ניתנים לשדרוג</item>
+    </plurals>
+    <string name="about_view_source_code"><![CDATA[הצג קוד מקור ב-%1$s<br/> הצטרף לערוץ %2$s שלנו]]></string>
+    <string name="translators" comment="Dear translators, please add your home page here following the format. There can be more than one translator. So feel free to append yourself.">ריק</string>
+    <string name="install">התקנה</string>
+    <string name="install_summary">הקש כדי להתקין את LSPosed</string>
+    <string name="not_installed">לא מותקן</string>
+    <string name="not_install_summary">LSPosed אינו מותקן</string>
+    <string name="activated">הופעל</string>
+    <string name="partial_activated">הופעל חלקית</string>
+    <string name="selinux_policy_not_loaded_summary">SEPolicy לא נטען כהלכה</string>
+    <string name="selinux_policy_not_loaded"><![CDATA[חלק מהתכונות לא יפעלו.<br/>נא לדווח על כך למפתחי Magisk</b></a> <a href="https://github.com/topjohnwu/Magisk/issues"><b>.]]></string>
+    <string name="system_inject_fail_summary">הזרקת תשתית המערכת נכשלה</string>
+    <string name="system_inject_fail"><![CDATA[זה נדיר ועלול להיגרם על ידי <b>Magisk</b> או מודולי Magisk באיכות נמוכה.<br/>אנא נסה להשבית מודולי Magisk שאינם Riru ו-LSPosed או שלח דיווח לוג מלא למפתחים.]]></string>
+    <string name="system_prop_incorrect_summary">מאפיין המערכת שגוי</string>
+    <string name="system_prop_incorrect"><![CDATA[חלק ממאפייני המערכת הדרושים נמחקו או שונו.<br/>המודולים עשויים להתבטל מדי פעם.]]></string>
+    <string name="need_update">צריך לעדכן</string>
+    <string name="please_update_summary">נא להתקין את הגרסה העדכנית ביותר של LSPosed</string>
+    <string name="info_api_version">גרסת API</string>
+    <string name="info_framework_version">גרסת תשתית</string>
+    <string name="info_manager_package_name">שם חבילת מנהל</string>
+    <string name="info_system_version">גרסת מערכת</string>
+    <string name="info_device">מכשיר</string>
+    <string name="info_system_abi">מערכת ABI</string>
+    <string name="info_dex2oat_wrapper">עטיפה של Dex Optimizer</string>
+    <string name="enabled">מופעל</string>
+    <string name="not_enabled">לא מופעל</string>
+    <string name="supported">נתמך</string>
+    <string name="unsupported">לא נתמך</string>
+    <string name="android_version_unsatisfied">גרסת אנדרואיד לא מספקת</string>
+    <string name="crashed">התרסק</string>
+    <string name="mount_failed">ה-mount נכשל</string>
+    <string name="selinux_permissive">מדיניות SELinux הינה מתירנית</string>
+    <string name="sepolicy_incorrect">מדיניות SELinux הינה שגויה</string>
+    <string name="update_lsposed">עדכן LSPosed</string>
+    <string name="update_lsposed_msg">אשר לעדכן את LSPosed? מכשיר זה יאתחל לאחר השלמת העדכון</string>
+    <string name="info_copied">הועתק ללוח</string>
+    <!-- WelcomeDialog -->
+    <string name="parasitic_welcome">ברוכים הבאים ל-LSPosed</string>
+    <string name="parasitic_welcome_summary">הנך משתמש בגרסת אפליקציית ניהול בתצורת טפיל, שיכולה ליצור קיצור דרך או עדיין להיפתח מהתראה.</string>
+    <string name="parasitic_welcome_summary_no_shortcut_support">הנך משתמש בגרסת אפליקציית ניהול בתצורת טפיל, שיכולה להיפתח מהתראה.</string>
+    <string name="create_shortcut">צור קיצור דרך</string>
+    <string name="never_show">לעולם אל תראה</string>
+    <string name="app_welcome">מומלצת גרסת אפליקציית ניהול בתצורת טפיל</string>
+    <string name="app_welcome_summary">LSPosed תומך כעת בתצורת טפיל כדי למנוע זיהוי, ניתן לפתוח את גרסת אפליקציית הניהול בתצורת טפיל מהתראה. מומלץ להסיר את האפליקציה הנוכחית.</string>
+    <!-- LogsActivity -->
+    <string name="menuSaveToSd">שמור</string>
+    <string name="nav_item_logs_verbose">לוגים מפורטים</string>
+    <string name="nav_item_logs_module">לוגים של מודולים</string>
+    <string name="logs_saving">שומר יומן, אנא המתן</string>
+    <string name="logs_saved">לוגים נשמרו</string>
+    <string name="logs_save_failed2">השמירה נכשלה:\n%s</string>
+    <string name="menuClearLog">נקה לוגים עכשיו</string>
+    <string name="logs_cleared">לוגים נוקו בהצלחה.</string>
+    <string name="scroll_top">גלול למעלה</string>
+    <string name="loading">טוען…</string>
+    <string name="scroll_bottom">גלול למטה</string>
+    <string name="menuReload">רענן</string>
+    <string name="logs_clear_failed_2">נכשל בניקוי הלוגים</string>
+    <string name="menu_enable_word_wrap">עטיפת מילה</string>
+    <string name="enabled_verbose_log">לוגים מפורטים מופעלים</string>
+    <string name="disabled_verbose_log">לוגים מפורטים מושבתים</string>
+    <!-- ModulesActivity -->
+    <string name="module_empty_description">(לא מסופק תיאור)</string>
+    <string name="warning_xposed_min_version">מודול זה דורש גרסה חדשה יותר של LSPosed (%d) ולכן לא יכול להיות מופעל</string>
+    <string name="warning_target_version_higher">מודול זה מיועד לגרסה חדשה יותר של Xposed (%d) ולכן ייתכן שחלק מהפונקציונליות לא תופעל כהלכה</string>
+    <string name="no_min_version_specified">מודול זה לא מציין את גסרת ה- LSPosed שהוא צריך.</string>
+    <string name="warning_min_version_too_low">מודול זה נוצר בשביל LSPosed גרסה %1$d, אך בשל חוסר תאימות לאחור בגרסה %2$d, הוא הופסק</string>
+    <string name="warning_installed_on_external_storage">מודול זה לא יכול להיטען מכיוון שהוא מותקן על כרטיס ה-SD, אנא העבר אותו לאחסון פנימי</string>
+    <string name="module_uninstall">הסר התקנה</string>
+    <string name="module_settings">הגדרות מודול</string>
+    <string name="view_in_repo">הצג ברפוסיטורי</string>
+    <string name="module_uninstall_message">האם אתה בטוח שאתה רוצב להסיר את התנקת המודול?</string>
+    <string name="module_uninstalled">%1$s הוסר</string>
+    <string name="module_uninstall_failed">הסרת ההתקנה הושלמה בהצלחה</string>
+    <string name="add_module_to_user">הוסף מודל למשתמש</string>
+    <string name="module_installed">נוסף %1$s למשתמש %2$s</string>
+    <string name="module_install_failed">הוספת המודל נכשלה</string>
+    <string name="install_to_user">התקן למשתמש %s</string>
+    <string name="install_to_user_message">רוצה להתקין %1$s למשתמש %2$s? מומלץ להתקין באופן ידני, כפיית התקנה באמצעות LSPosed עלולה לגרום לבעיות.</string>
+    <string name="expand">להרחיב</string>
+    <string name="collapse">התמוטטות</string>
+    <!-- AppListActivity -->
+    <string name="compile_speed">מטב מחדש</string>
+    <string name="compile_speed_msg">ממטב…</string>
+    <string name="compile_done">אופטימיזציה הושלמה.</string>
+    <string name="app_launch">הרץ</string>
+    <string name="compile_failed">אופטימיזציה נכשלה או שהערך המוחזר הוא ריק.</string>
+    <string name="compile_failed_with_info">אופטימיזציה נכשלה: </string>
+    <string name="sort_by_name">מיין על פי שם האפליקציה</string>
+    <string name="sort_by_package_name">מיין על פי שם החבילה</string>
+    <string name="sort_by_install_time">מיין על פי זמן ההתקנה</string>
+    <string name="sort_by_update_time">מיין על פי זמן העדכון</string>
+    <string name="sort_reverse">להפוך</string>
+    <string name="menu_show_system_apps">אפליקציות מערכת</string>
+    <string name="menu_sort">ממיין</string>
+    <string name="enable_module">הפעל מודול</string>
+    <string name="no_scope_selected">אתה לא בחרת שום אפליקציה. להמשיך?</string>
+    <string name="menu_show_games">משחקים</string>
+    <string name="menu_show_modules">מודולים</string>
+    <string name="menu_show_denylist">רשימת דחיה</string>
+    <string name="failed_to_save_scope_list">נכשל לשמור רשימת תחומים</string>
+    <string name="app_version">גרסה: %1$s</string>
+    <string name="use_recommended">מומלץ</string>
+    <string name="no_scope_selected_has_recommended">אתה לא בחרת שום אפליקציה. לבחור אפליקציות מומלצות?</string>
+    <string name="use_recommended_message">בחר אפליקציות מומלצות?</string>
+    <string name="module_is_not_activated_yet">מודול LSPosed עדיין לא הופעל</string>
+    <string name="requested_by_module">מומלץ</string>
+    <string name="update_available">עדכון זמין: %1$s</string>
+    <string name="module_disabled_no_selection">מודול %s בוטל מכיוון שלא נבחרה שום אפליקציה.</string>
+    <string name="android_framework">מערכת Framework</string>
+    <string name="menu_backup_and_restore">מגבה</string>
+    <string name="menu_backup">גיבוי</string>
+    <string name="menu_restore">שחזור</string>
+    <string name="force_stop">אלץ עצירה</string>
+    <string name="force_stop_dlg_title">אצץ עצירה?</string>
+    <string name="force_stop_dlg_text">אם אתה תאלץ עצירה לאפליקציה, היא עלולה להתנהג בצורה לא רצויה.</string>
+    <string name="reboot_required">הפעלה מחדש דרושה בכדי שהשינויים יכנסו לתוקף</string>
+    <string name="reboot">הפעל מחדש</string>
+    <string name="menu_hide">הסתר</string>
+    <string name="deny_list">%s נמצא ברשימת הדחיה. ייתכן שהוא לא ייכנס לתוקף.</string>
+    <string name="deny_list_info">ברשימת הדחיה</string>
+    <!-- ModulesActivity and AppListActivity -->
+    <string name="modules_other_app">הצג באפליקציה אחרת</string>
+    <string name="module_app_info">מידע על האפליקציה</string>
+    <string name="list_empty">¯\\\\_(ツ)_\/¯\n אין פה כלום</string>
+    <!-- SettingsActivity -->
+    <string name="settings_group_framework">Framework</string>
+    <string name="settings_disable_verbose_log">בטל verbose logs</string>
+    <string name="settings_disable_verbose_log_summary">בקשת דיווח על בעיות לכלול יומנים מילוליים</string>
+    <string name="pure_black_dark_theme">ערכת נושא שחור כהה</string>
+    <string name="pure_black_dark_theme_summary">השתמש בערכת נושא שחור טהור אם ערכת נושא כהה מופעלת</string>
+    <string name="settings_group_theme">ערכת נושא</string>
+    <string name="settings_backup_and_restore">גיבוי ושחזור</string>
+    <string name="settings_backup_summery">גיבוי רשימת מודולים ורשימות היקף.</string>
+    <string name="settings_restore_summery">שחזר את רשימת המודולים ורשימות ההיקף.</string>
+    <string name="settings_backup">גיבוי</string>
+    <string name="settings_backup_failed2">גיבוי נכשל:\n%s</string>
+    <string name="enable_documentui">אנא הפעל את DocumentUI</string>
+    <string name="settings_restore">שחזור</string>
+    <string name="settings_restore_failed2">השחזור נכשל::\n%s</string>
+    <string name="group_network">רשת</string>
+    <string name="dns_over_http">DNS על פני HTTPS</string>
+    <string name="dns_over_http_summary">מעקף הרעלת DNS במדינות מסוימות</string>
+    <string name="theme_color">צבע ערכת נושא</string>
+    <string name="theme_color_system">צבע נושא המערכת</string>
+    <string name="settings_show_hidden_icon_apps_enabled">כפה על אפליקציות להציג סמלי מפעיל</string>
+    <string name="settings_show_hidden_icon_apps_enabled_summary">לאחר Android 10, אפליקציות אינן מורשות להסתיר את סמלי המשגר שלהן. בטל את הלחצן הדו-מצבי כדי להפוך תכונת מערכת זו ללא זמינה.</string>
+    <string name="settings_group_system">מערכת</string>
+    <string name="settings_language">שפה</string>
+    <string name="settings_translation_contributors">תורמים לתרגום</string>
+    <string name="settings_translation">השתתף בתרגום</string>
+    <string name="settings_translation_summary">עזור לנו לתרגם את %s לשפה שלך</string>
+    <string name="settings_create_shortcut_summary">צור קיצור דרך שיכול לפתוח מנהל טפילי</string>
+    <string name="settings_shortcut_pinned_hint">קיצור דרך הוצמד</string>
+    <string name="settings_unsupported_pin_shortcut_summary">מפעיל ברירת המחדל הנוכחי אינו תומך בקיצורי דרך</string>
+    <string name="settings_enable_status_notification">הודעת סטטוס</string>
+    <string name="settings_enable_status_notification_summary">הצג הודעה שיכולה לפתוח מנהל טפילי</string>
+    <string name="disable_status_notification_error">אין קיצור דרך, לא ניתן להשבית הודעה</string>
+    <string name="settings_update_channel">ערוץ עדכון</string>
+    <string name="update_channel_stable">יציב</string>
+    <string name="update_channel_bate">בטא</string>
+    <string name="update_channel_nightly">בניה לילית</string>
+    <string name="settings_xposed_api_call_protection">הגנה מפני קריאות Xposed API</string>
+    <string name="settings_xposed_api_call_protection_summary">חסום קוד מודול שנטען באופן דינמי לשימוש ב-Xposed API, זה עשוי לשבור מודולים מסוימים אך להועיל לאבטחה</string>
+    <!-- Module Repo -->
+    <string name="module_readme">קרא אותי</string>
+    <string name="module_releases">גרסאות</string>
+    <string name="module_information">מידע</string>
+    <string name="module_information_homepage">דף בית</string>
+    <string name="module_information_source_url">קוד מקור</string>
+    <string name="module_information_collaborators">מפתחים</string>
+    <string name="module_release_view_assets">קבצים</string>
+    <string name="menu_open_in_browser">פתח בדפדפן</string>
+    <string name="module_release_load_more">הראה גרסאות ישנות</string>
+    <string name="module_release_no_more">אין עוד גרסאות</string>
+    <string name="repo_load_failed">נשכל לטעון מודול: %s</string>
+    <string name="sort_upgradable_first">ניתן לשדרוג תחילה</string>
+    <string name="installed">מוּתקָן</string>
+    <plurals name="module_release_assets_download_count">
+        <item quantity="one">%d הורדה</item>
+        <item quantity="two">%d הורדות</item>
+        <item quantity="many">%d הורדות</item>
+        <item quantity="other">%d הורדות</item>
+    </plurals>
+    <!-- Colors -->
+    <string name="color_sakura">סאקורה</string>
+    <string name="color_red">אדום</string>
+    <string name="color_pink">ורוד</string>
+    <string name="color_purple">סגול</string>
+    <string name="color_deep_purple">סגול עמוק</string>
+    <string name="color_indigo">אינדיגו</string>
+    <string name="color_blue">כחול</string>
+    <string name="color_light_blue">כחול בהיר</string>
+    <string name="color_cyan">טורקיז</string>
+    <string name="color_teal">ירוק כחלחל</string>
+    <string name="color_green">ירוק</string>
+    <string name="color_light_green">ירוק בהיר</string>
+    <string name="color_lime">לימון</string>
+    <string name="color_yellow">צהוב</string>
+    <string name="color_amber">ענבר</string>
+    <string name="color_orange">כתום</string>
+    <string name="color_deep_orange">כתום עמוק</string>
+    <string name="color_brown">חום</string>
+    <string name="color_blue_grey">כחול אפור</string>
+</resources>

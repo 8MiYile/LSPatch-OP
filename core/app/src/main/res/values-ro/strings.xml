@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of LSPosed.
+  ~
+  ~ LSPosed is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ LSPosed is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with LSPosed.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  ~ Copyright (C) 2021 LSPosed Contributors
+  -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/xposed_module_updated_notification_*,@string/module_is_not_activated_*">
+    <!-- MainActivity -->
+    <string name="overview">Prezentare generală</string>
+    <string name="Modules">Module</string>
+    <plurals name="modules_enabled_count">
+        <item quantity="one">%d modul activat</item>
+        <item quantity="few">%d module activate</item>
+        <item quantity="other">%d module activate</item>
+    </plurals>
+    <string name="Logs">Jurnale</string>
+    <string name="Settings">Setări</string>
+    <string name="feedback_or_suggestion">Feedback sau sugestie</string>
+    <string name="About">Despre</string>
+    <string name="report_issue">Raportează o problemă</string>
+    <string name="module_repo">Depozit</string>
+    <string name="module_repo_up_to_date">Toate modulele sunt actualizate</string>
+    <string name="module_repo_published_time">Publicat la %s</string>
+    <string name="module_repo_updated_time">Actualizat la %s</string>
+    <plurals name="module_repo_upgradable">
+        <item quantity="one">%d module actualizabil</item>
+        <item quantity="few">%d module actualizabile</item>
+        <item quantity="other">%d module actualizabile.</item>
+    </plurals>
+    <string name="about_view_source_code"><![CDATA[Vezi codul sursă la%1$s<br/>Alătură-te canalului nostru %2$s]]></string>
+    <string name="translators" comment="Dear translators, please add your home page here following the format. There can be more than one translator. So feel free to append yourself.">Chele Ion, Igor Sorocean, br l12</string>
+    <string name="install">Instalare</string>
+    <string name="install_summary">Atingeți pentru a instala LSPosed</string>
+    <string name="not_installed">Nu este instalat</string>
+    <string name="not_install_summary">LSPosed nu este instalat</string>
+    <string name="activated">Activat</string>
+    <string name="partial_activated">Parțial activat</string>
+    <string name="selinux_policy_not_loaded_summary">SEPolicy nu este încărcată corect</string>
+    <string name="selinux_policy_not_loaded"><![CDATA[Unele funcții nu vor funcționa.<br/>Vă rugăm să raportați acest lucru la <a href="https://github.com/topjohnwu/Magisk/issues"><b>Magisk</b></a> dezvoltator.]]></string>
+    <string name="system_inject_fail_summary">Injectarea System Framework a eșuat</string>
+    <string name="system_inject_fail"><![CDATA[Acest lucru este rar și poate fi cauzat de <b>Magisk</b> sau de unele module Magisk de calitate scăzută.<br/>Vă rugăm să încercați să dezactivați modulele Magisk altele decât Riru și LSPosed sau să trimiteți jurnalul complet dezvoltatorilor.]]></string>
+    <string name="system_prop_incorrect_summary">System prop incorect</string>
+    <string name="system_prop_incorrect"><![CDATA[Unele proprietăți necesare de sistem au fost șterse sau modificate<br/>modulele pot invalida ocazional.]]></string>
+    <string name="need_update">Trebuie actualizat</string>
+    <string name="please_update_summary">Te rugăm să instalezi cea mai recentă versiune de LSPosed</string>
+    <string name="info_api_version">Versiune API</string>
+    <string name="info_framework_version">Versiune Framework</string>
+    <string name="info_manager_package_name">Numele pachetului managerului</string>
+    <string name="info_system_version">Versiune sistem</string>
+    <string name="info_device">Dispozitiv</string>
+    <string name="info_system_abi">Sistem ABI</string>
+    <string name="info_dex2oat_wrapper">Dex Optimizer Wrapper</string>
+    <string name="enabled">Activat</string>
+    <string name="not_enabled">Neactivat</string>
+    <string name="supported">Suportă</string>
+    <string name="unsupported">Nesuportat</string>
+    <string name="android_version_unsatisfied">Versiunea Android nesatisfăcută</string>
+    <string name="crashed">Oprit</string>
+    <string name="mount_failed">Montarea a eșuat</string>
+    <string name="selinux_permissive">SELinux este permisiv</string>
+    <string name="sepolicy_incorrect">Politica SELinux este incorectă</string>
+    <string name="update_lsposed">Actualizează LSPosed</string>
+    <string name="update_lsposed_msg">Confirmați actualizarea LSPosed? Acest dispozitiv va reporni după finalizarea actualizării</string>
+    <string name="info_copied">Copiat în clipboard</string>
+    <!-- WelcomeDialog -->
+    <string name="parasitic_welcome">Bine ați venit la LSPosed</string>
+    <string name="parasitic_welcome_summary">Folosiți managerul de paraziți, care poate crea o comandă rapidă sau poate fi deschis încă din notificare.</string>
+    <string name="parasitic_welcome_summary_no_shortcut_support">Folosiți managerul de paraziți, care se poate deschide din notificare.</string>
+    <string name="create_shortcut">Creează scurtătură</string>
+    <string name="never_show">Nu arăta niciodată</string>
+    <string name="app_welcome">Manager parazitar recomandat</string>
+    <string name="app_welcome_summary">LSPosed suportă acum parazitarea sistemului pentru a evita detectarea, puteți deschide managerul de paraziți din notificare. Se recomandă dezinstalarea aplicației curente.</string>
+    <!-- LogsActivity -->
+    <string name="menuSaveToSd">Salvează</string>
+    <string name="nav_item_logs_verbose">Jurnalele Verbose</string>
+    <string name="nav_item_logs_module">Jurnale module</string>
+    <string name="logs_saving">Salvarea jurnalului, vă rugăm să așteptați</string>
+    <string name="logs_saved">Jurnale salvate</string>
+    <string name="logs_save_failed2">Salvarea a eșuat:\n%s</string>
+    <string name="menuClearLog">Curăță jurnalul acum</string>
+    <string name="logs_cleared">Jurnalul a fost curățat cu succes.</string>
+    <string name="scroll_top">Derulează pana sus</string>
+    <string name="loading">Se încarcă…</string>
+    <string name="scroll_bottom">Derulează până jos</string>
+    <string name="menuReload">Reîncarcă</string>
+    <string name="logs_clear_failed_2">Ștergerea jurnalului a eșuat</string>
+    <string name="menu_enable_word_wrap">Încadrare cuvinte</string>
+    <string name="enabled_verbose_log">Jurnal Verbose activat</string>
+    <string name="disabled_verbose_log">Jurnal Verbose dezactivat</string>
+    <!-- ModulesActivity -->
+    <string name="module_empty_description">(nici o descriere furnizată)</string>
+    <string name="warning_xposed_min_version">Acest modul necesită o versiune Xposed mai nouă (%d) și astfel nu poate fi activată</string>
+    <string name="warning_target_version_higher">Acest modul este proiectat pentru o versiune mai nouă a Xposed (%d) și, prin urmare, este posibil ca unele funcționalități să nu funcționeze.</string>
+    <string name="no_min_version_specified">Acest modul nu specifica versiunea Xposed de care are nevoie.</string>
+    <string name="warning_min_version_too_low">Acest modul a fost creat pentru versiunea Xposed %1$d, dar datorită modificărilor incompatibile din versiunea %2$d, a fost dezactivat</string>
+    <string name="warning_installed_on_external_storage">Acest modul nu poate fi încărcat deoarece este instalat pe cardul SD, te rugăm mută-l în memoria internă</string>
+    <string name="module_uninstall">Dezinstalează</string>
+    <string name="module_settings">Setări modul</string>
+    <string name="view_in_repo">Vezi în Repo</string>
+    <string name="module_uninstall_message">Vrei să dezinstalezi acest modul?</string>
+    <string name="module_uninstalled">%1$s dezinstalat</string>
+    <string name="module_uninstall_failed">Dezinstalare nereușită</string>
+    <string name="add_module_to_user">Adaugă modul la utilizator</string>
+    <string name="module_installed">%1$s adăugat la utilizatorul %2$s</string>
+    <string name="module_install_failed">Adăugarea modulului a eșuat</string>
+    <string name="install_to_user">Instalează la utilizatorul %s</string>
+    <string name="install_to_user_message">Doriți să instalați %1$s la utilizatorul %2$s? Este recomandat să instalați manual, forțând instalarea prin LSPosed poate cauza probleme.</string>
+    <string name="expand">extindeți</string>
+    <string name="collapse">restrânge</string>
+    <!-- AppListActivity -->
+    <string name="compile_speed">Re-optimizare</string>
+    <string name="compile_speed_msg">Optimizare…</string>
+    <string name="compile_done">Optimizare finalizată</string>
+    <string name="app_launch">Lansați-l</string>
+    <string name="compile_failed">Optimizarea a eșuat: valoarea returnată este goală</string>
+    <string name="compile_failed_with_info">Optimizare eșuată: </string>
+    <string name="sort_by_name">Numele aplicației</string>
+    <string name="sort_by_package_name">Numele pachetului</string>
+    <string name="sort_by_install_time">Timp de instalare</string>
+    <string name="sort_by_update_time">Timp actualizare</string>
+    <string name="sort_reverse">Inversează</string>
+    <string name="menu_show_system_apps">Aplicații de sistem</string>
+    <string name="menu_sort">Sortare</string>
+    <string name="enable_module">Activează modul</string>
+    <string name="no_scope_selected">Nu ați selectat nicio aplicație. Continuați?</string>
+    <string name="menu_show_games">Jocuri</string>
+    <string name="menu_show_modules">Module</string>
+    <string name="menu_show_denylist">Lista neagră</string>
+    <string name="failed_to_save_scope_list">Salvare eșuată listă de scop</string>
+    <string name="app_version">Versiune: %1$s</string>
+    <string name="use_recommended">Recomandate</string>
+    <string name="no_scope_selected_has_recommended">Nu ați selectat nicio aplicație. Selectați aplicațiile recomandate?</string>
+    <string name="use_recommended_message">Selectați aplicațiile recomandate?</string>
+    <string name="module_is_not_activated_yet">Modulul Xposed nu este încă activat</string>
+    <string name="requested_by_module">Recomandate</string>
+    <string name="update_available">Actualizare disponibilă: %1$s</string>
+    <string name="module_disabled_no_selection">Modulul %s a fost dezactivat din moment ce nicio aplicație nu a fost selectată.</string>
+    <string name="android_framework">System Framework</string>
+    <string name="menu_backup_and_restore">Copie de rezervă</string>
+    <string name="menu_backup">Copie de rezervă</string>
+    <string name="menu_restore">Restaurează</string>
+    <string name="force_stop">Oprește forțat</string>
+    <string name="force_stop_dlg_title">Oprești forțat?</string>
+    <string name="force_stop_dlg_text">Dacă forțați oprirea unei aplicații, aceasta se poate comporta necorespunzător.</string>
+    <string name="reboot_required">Repornirea este necesară pentru ca aceasta schimbare să se aplice</string>
+    <string name="reboot">Repornire</string>
+    <string name="menu_hide">Ascunde</string>
+    <string name="deny_list">%s este în lista neagră. S-ar putea să nu aibă efect.</string>
+    <string name="deny_list_info">În lista neagră</string>
+    <!-- ModulesActivity and AppListActivity -->
+    <string name="modules_other_app">Vezi în altă aplicație</string>
+    <string name="module_app_info">Informații aplicație</string>
+    <string name="list_empty">¯\\\\_(ツ)_\/¯\nNimic aici</string>
+    <!-- SettingsActivity -->
+    <string name="settings_group_framework">Framework</string>
+    <string name="settings_disable_verbose_log">Dezactivează jurnalele verbose</string>
+    <string name="settings_disable_verbose_log_summary">Raportați problemele de solicitare a rapoartelor pentru a include jurnalele verbale</string>
+    <string name="pure_black_dark_theme">Temă întunecată</string>
+    <string name="pure_black_dark_theme_summary">Utilizați tema pur neagră dacă tema întunecată este activată</string>
+    <string name="settings_group_theme">Temă</string>
+    <string name="settings_backup_and_restore">Copie de rezervă și restaurare</string>
+    <string name="settings_backup_summery">Lista modulelor de backup și lista de scopuri.</string>
+    <string name="settings_restore_summery">Restaurează lista de module și lista de scopuri.</string>
+    <string name="settings_backup">Copie de rezervă</string>
+    <string name="settings_backup_failed2">Copia de rezervă a eșuat:\n%s</string>
+    <string name="enable_documentui">Vă rugăm să activați DocumentUI</string>
+    <string name="settings_restore">Restaurează</string>
+    <string name="settings_restore_failed2">Restaurarea a eșuat:\n%s</string>
+    <string name="group_network">Rețea</string>
+    <string name="dns_over_http">DNS prin HTTPS</string>
+    <string name="dns_over_http_summary">Soluționarea otrăvirii DNS în unele țări</string>
+    <string name="theme_color">Culoarea temei</string>
+    <string name="theme_color_system">Culoarea temei de sistem</string>
+    <string name="settings_show_hidden_icon_apps_enabled">Forțează aplicațiile să afișeze pictogramele lansatorului</string>
+    <string name="settings_show_hidden_icon_apps_enabled_summary">După Android 10, aplicațiile nu mai au voie să își ascundă pictogramele din lansator. Dezactivați comutatorul pentru a dezactiva această funcție de sistem.</string>
+    <string name="settings_group_system">Sistem</string>
+    <string name="settings_language">Limbă</string>
+    <string name="settings_translation_contributors">Contribuitori la traducere</string>
+    <string name="settings_translation">Participă în traducere</string>
+    <string name="settings_translation_summary">Ajută-ne să traducem %s în limba ta</string>
+    <string name="settings_create_shortcut_summary">Creați o comandă rapidă care poate deschide managerul de paraziți</string>
+    <string name="settings_shortcut_pinned_hint">Comenzi rapide fixate</string>
+    <string name="settings_unsupported_pin_shortcut_summary">Lansatorul implicit actual nu acceptă comenzi rapide de tip pin</string>
+    <string name="settings_enable_status_notification">Notificare de stare</string>
+    <string name="settings_enable_status_notification_summary">Afișați o notificare care poate deschide managerul de paraziți</string>
+    <string name="disable_status_notification_error">Nu există scurtătură, nu se poate dezactiva notificarea</string>
+    <string name="settings_update_channel">Canal de actualizare</string>
+    <string name="update_channel_stable">Stabil</string>
+    <string name="update_channel_bate">Beta</string>
+    <string name="update_channel_nightly">Construire nocturnă</string>
+    <string name="settings_xposed_api_call_protection">Protecția apelurilor API Xposed</string>
+    <string name="settings_xposed_api_call_protection_summary">Blocați codul modulului încărcat dinamic pentru a utiliza API-ul Xposed, acest lucru poate întrerupe unele module, dar aduce beneficii în materie de securitate</string>
+    <!-- Module Repo -->
+    <string name="module_readme">Citește-mă</string>
+    <string name="module_releases">Lansări</string>
+    <string name="module_information">Infromatii</string>
+    <string name="module_information_homepage">Pagină principală</string>
+    <string name="module_information_source_url">Cod sursă</string>
+    <string name="module_information_collaborators">Colaboratori</string>
+    <string name="module_release_view_assets">Bunuri</string>
+    <string name="menu_open_in_browser">Deschide în browser</string>
+    <string name="module_release_load_more">Arată versiunile mai vechi</string>
+    <string name="module_release_no_more">Nu mai sunt lansări</string>
+    <string name="repo_load_failed">Nu s-a putut încărca repo-ul modulului: %s</string>
+    <string name="sort_upgradable_first">Upgradabil mai întâi</string>
+    <string name="installed">Instalat</string>
+    <plurals name="module_release_assets_download_count">
+        <item quantity="one">%d descărcați</item>
+        <item quantity="few">%d descărcări</item>
+        <item quantity="other">%d descărcări</item>
+    </plurals>
+    <!-- Colors -->
+    <string name="color_sakura">Sakura</string>
+    <string name="color_red">Roșu</string>
+    <string name="color_pink">Roz</string>
+    <string name="color_purple">Violet</string>
+    <string name="color_deep_purple">Violet închis</string>
+    <string name="color_indigo">Indigo</string>
+    <string name="color_blue">Albastru</string>
+    <string name="color_light_blue">Albastru deschis</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_teal">Turcoaz</string>
+    <string name="color_green">Verde</string>
+    <string name="color_light_green">Verde deschis</string>
+    <string name="color_lime">Verde-Deschis</string>
+    <string name="color_yellow">Galben</string>
+    <string name="color_amber">Chihlimbar</string>
+    <string name="color_orange">Portocaliu</string>
+    <string name="color_deep_orange">Portocaliu închis</string>
+    <string name="color_brown">Maro</string>
+    <string name="color_blue_grey">Albastru gri</string>
+</resources>
