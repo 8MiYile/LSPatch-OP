@@ -52,8 +52,8 @@ jobs:
     - name: Setup Java
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
-        distribution: 'temurin'
+        java-version: '21'
+        distribution: 'liberica'
 
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
